@@ -1,0 +1,20 @@
+* {
+  background-color: grey;
+  background-color: #95afc0;
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.google.com/specimen/Montserrat');
+}
+
+h2 {
+  font-family: 'Montserrat' !important;
+  text-align: center;
+}
+
+.contact-information {
+  text-align: center;
+  font-family: "sansationFont";
+  }
+
