@@ -1,6 +1,6 @@
-* {
-  background-color: grey;
-  background-color: #95afc0;
+html {
+  background: linear-gradient(35deg, #95afc0, #0f2b3d) no-repeat center fixed;
+  background-size: cover;
 }
 
 
