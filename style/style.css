@@ -1,16 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   background: linear-gradient(35deg, #95afc0, #0f2b3d) no-repeat center fixed;
   background-size: cover;
 }
 
-h2 {
+.main-header {
+  position: relative;
+  font-size: 4rem;
   font-family: 'Nunito', sans-serif;
   text-align: center;
-}
+  animation-name: fade-in;
+  animation-duration: 3s;
+  height: 10em;
+  }
+  
+.main-header h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .contact-information {
   text-align: center;
   font-family: 'Space Grotesk', sans-serif;
   font-style: italic;
+  position: relative;
+  animation-name: contact-animation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
   }
 
+  @keyframes contact-animation {
+    0% {
+      right: 50%;
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      right: 0%;
+      opacity: 1;
+    }
+  }
