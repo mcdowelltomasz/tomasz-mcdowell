@@ -4,6 +4,7 @@
 }
 
 html {
+  font-family: 'Nunito', sans-serif;
   background: linear-gradient(35deg, #95afc0, #0f2b3d) no-repeat center fixed;
   background-size: cover;
 }
@@ -11,7 +12,6 @@ html {
 .main-header {
   position: relative;
   font-size: 4rem;
-  font-family: 'Nunito', sans-serif;
   text-align: center;
   animation-name: fade-in;
   animation-duration: 4s;
@@ -19,7 +19,6 @@ html {
   }
 
 .main-header h2 {
-  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,9 +36,73 @@ html {
     opacity: 1;
   }
 }
+
+.links {
+  display: grid;
+  grid-column-gap: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  animation-name: links-animation;
+  animation-duration: 5s;
+  }
+
+@keyframes links-animation {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.links a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.blog {
+  grid-column: 1 / 2;
+}
+
+.aboutme {
+  grid-column: 2 / 3;
+}
+
+.work {
+  grid-column: 3 / 4;
+}
+
+.blog:hover a {
+  color: #612131;
+  text-decoration: bold;
+}
+
+.work:hover a {
+  animation-duration: 1s;
+  color: #612131;
+  text-decoration: bold;
+}
+
+.aboutme:hover a {
+  color:#612131;
+  text-decoration: bold;
+}
+
+.aboutmetext {
+  text-align: center;
+}
+
+.worktext{
+  text-align: center;
+}
+
 .contact-information {
   text-align: center;
-  font-family: 'Space Grotesk', sans-serif;
   font-style: italic;
   position: relative;
   animation-name: contact-animation;
