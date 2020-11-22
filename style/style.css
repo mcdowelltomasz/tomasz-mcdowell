@@ -14,10 +14,10 @@ html {
   font-family: 'Nunito', sans-serif;
   text-align: center;
   animation-name: fade-in;
-  animation-duration: 3s;
+  animation-duration: 4s;
   height: 10em;
   }
-  
+
 .main-header h2 {
   margin: 0;
   position: absolute;
@@ -28,6 +28,9 @@ html {
 
 @keyframes fade-in {
   0% {
+    opacity: 0;
+  }
+  20% {
     opacity: 0;
   }
   100% {
