@@ -10,12 +10,11 @@ html {
 }
 
 .main-header {
-  position: relative;
-  font-size: 4rem;
+  white-space: nowrap;
+  font-size: 10vh;
   text-align: center;
   animation-name: fade-in;
   animation-duration: 4s;
-  height: 10em;
   }
 
 .main-header h2 {
@@ -37,13 +36,15 @@ html {
   }
 }
 
+/*mobile resizing*/
+@media (max-width: 500px) {h2 {font-size: 1vh;}}
+
 .links {
-  display: grid;
-  grid-column-gap: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
+  height: 95vh;
+  font-size: 4vh;
+  display:flex;
+  justify-content: space-evenly;
+  position: relative;
   animation-name: links-animation;
   animation-duration: 5s;
   }
@@ -61,55 +62,39 @@ html {
 }
 
 .links a {
+  position: absolute;
+  top: 55vh;
   text-decoration: inherit;
   color: inherit;
 }
 
-.blog {
-  grid-column: 1 / 2;
-}
-
-.aboutme {
-  grid-column: 2 / 3;
-}
-
-.work {
-  grid-column: 3 / 4;
-}
-
 .blog:hover a {
   color: #612131;
-  text-decoration: bold;
 }
 
 .work:hover a {
-  animation-duration: 1s;
   color: #612131;
-  text-decoration: bold;
 }
 
 .aboutme:hover a {
   color:#612131;
-  text-decoration: bold;
-}
-
-.aboutmetext {
-  text-align: center;
-}
-
-.worktext{
-  text-align: center;
 }
 
 .contact-information {
   text-align: center;
   font-style: italic;
   position: relative;
+  font-size: 3vh;
   animation-name: contact-animation;
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
   }
 
+.contact-information p {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
   @keyframes contact-animation {
     0% {
       right: 50%;
@@ -119,7 +104,6 @@ html {
       opacity: 0;
     }
     100% {
-      right: 0%;
       opacity: 1;
     }
   }
